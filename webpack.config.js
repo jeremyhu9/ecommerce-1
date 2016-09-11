@@ -1,10 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './js/app.js',
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js'
+  },
+  resolve: {
+    // in order to read js, jsx, and json files
+    extensions: ['', '.js', '.jsx', '.json']
   },
   module: {
     loaders: [{
