@@ -1,0 +1,34 @@
+{
+  "all": [{
+    "productName": "Standard Keyboard",
+    "description": "A keyboard to type stuff with.",
+    "price": "9.99",
+    "id": "1"
+  }, {
+    "productName": "Standard Mouse",
+    "description": "A mouse to click stuff with.",
+    "price": "4.99",
+    "id": "2"
+  }, {
+    "productName": "Standard Monitor",
+    "description": "A monitor to view stuff with.",
+    "price": "59.99",
+    "id": "3"
+  }],
+  "featured" : [{
+    "productName": "Standard Keyboard",
+    "description": "A keyboard to type stuff with.",
+    "price": "9.99",
+    "id": "1"
+  }, {
+    "productName": "Standard Mouse",
+    "description": "A mouse to click stuff with.",
+    "price": "4.99",
+    "id": "2"
+  }, {
+    "productName": "Standard Monitor",
+    "description": "A monitor to view stuff with.",
+    "price": "59.99",
+    "id": "3"
+  }]
+}
