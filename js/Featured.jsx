@@ -9,7 +9,9 @@ const Featured = React.createClass({
         <div>
           {data.featured.map(function(item) {
             return (
-              <p>{item.productName}</p>
+              <div key={item.id}>
+                <p>{item.productName}</p>
+              </div>
             )
           })}
         </div>

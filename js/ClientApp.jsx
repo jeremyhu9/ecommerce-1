@@ -18,7 +18,7 @@ const App = React.createClass({
     return(
       <Router history = {hashHistory}>
         <Route path='/' component={Landing} />
-        <Route path='browseall' component={Browse} />
+        <Route path='/browseall' component={Browse} />
       </Router>
     )
   }
