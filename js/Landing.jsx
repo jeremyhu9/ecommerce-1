@@ -7,7 +7,7 @@ const Landing = React.createClass({
     return (
       <div>
         <div className='page-header'>
-          <h1>Computers Emporium <small>Get Yo Gear Here!</small></h1>
+          <h1>Computers Emporium <small>Get Your Gear Here!</small></h1>
         </div>
 
         <div className="navigation">
