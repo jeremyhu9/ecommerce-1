@@ -4,21 +4,14 @@ const Landing = require('./Landing');
 const Browse = require('./Browseall');
 const { Router, Route, hashHistory } = require('react-router');
 
-// const rootRoutes = {
-//   path: '/',
-//   indexRoute: {
-//     getComponent(location, cb) {
-
-//     }
-//   }
-// }
-
 const App = React.createClass({
   render() {
     return(
       <Router history = {hashHistory}>
-        <Route path='/' component={Landing} />
-        <Route path='/browseall' component={Browse} />
+        <Route path='/' component={Landing}>
+          <Route path='browseall' component={Browse} />
+        </Route>
+
       </Router>
     )
   }
