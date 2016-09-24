@@ -7,7 +7,6 @@ const Browse = React.createClass({
     return (
        <div>
         <h3>All Items Here</h3>
-        <Link to='/' >Home </Link>
         <div>
           {data.all.map(function(item) {
             return (
