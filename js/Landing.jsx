@@ -10,16 +10,14 @@ const Landing = React.createClass({
           <h1>Computers Emporium <small>Get Yo Gear Here!</small></h1>
         </div>
 
-        <nav className="navbar navbar-default">
-          <div className="container-fluid">
-            <div className="navbar-header">
-              <Link to="/" className="navbar-brand">Home</Link>
-              <Link to="browseall" className="navbar-brand">Browse All</Link>
-            </div>
-          </div>
+        <div className="navigation">
+          <nav className="navbar navbar-default">
+            <div className="container-fluid">
+              <div className="navbar-header">
+                <Link to="/" className="navbar-brand">Home</Link>
+                <Link to="browseall" className="navbar-brand">Browse All</Link>
+              </div>
 
-          <div className="row">
-            <div className="col-md-4 col-md-offset-4">
               <form className="navbar-form navbar-left" role="search">
                 <div className="form-group">
                   <input type="text" className="form-control" placeholder="Search" />
@@ -29,8 +27,9 @@ const Landing = React.createClass({
                 </div>
               </form>
             </div>
-          </div>
-        </nav>
+
+          </nav>
+        </div>
 
         <section>
           {this.props.children}

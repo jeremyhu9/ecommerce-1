@@ -2,10 +2,14 @@ html, body {
   text-align: center;
 }
 
-.nav-border {
-  border: 1px solid black;
+.navbar {
+  margin: 0px;
 }
 
-.navbar {
-  margin: 0;
+.page-header {
+  margin: 0px;
+}
+
+.navbar-form {
+  width: 100px;
 }
