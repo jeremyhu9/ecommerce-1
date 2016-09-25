@@ -50,6 +50,7 @@
 	var ReactDOM = __webpack_require__(34);
 	var Landing = __webpack_require__(172);
 	var Browse = __webpack_require__(173);
+	var Featured = __webpack_require__(238);
 
 	var _require = __webpack_require__(174);
 
@@ -60,7 +61,7 @@
 	var App = React.createClass({
 	  displayName: 'App',
 	  render: function render() {
-	    return React.createElement(Router, { history: hashHistory }, React.createElement(Route, { path: '/', component: Landing }, React.createElement(Route, { path: 'browseall', component: Browse })));
+	    return React.createElement(Router, { history: hashHistory }, React.createElement(Route, { component: Landing }, React.createElement(Route, { path: '/', component: Featured }), React.createElement(Route, { path: 'browseall', component: Browse })));
 	  }
 	});
 
