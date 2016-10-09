@@ -9,8 +9,9 @@ const Featured = React.createClass({
         <div>
           {data.featured.map(function(item) {
             return (
-              <div key={item.id}>
+              <div className="items" key={item.id}>
                 <p>{item.productName}</p>
+                <img src="http://placehold.it/140x100" />
               </div>
             )
           })}

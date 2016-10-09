@@ -2,14 +2,16 @@ html, body {
   text-align: center;
 }
 
-.navbar {
-  margin: 0px;
+.navigation {
+  margin-top: -20px;
 }
 
-.page-header {
-  margin: 0px;
+.input-group-btn {
+  float: right;
 }
 
-.navbar-form {
-  width: 100px;
+.items {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
 }

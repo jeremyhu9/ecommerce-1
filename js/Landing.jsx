@@ -18,14 +18,14 @@ const Landing = React.createClass({
                 <Link to="browseall" className="navbar-brand">Browse All</Link>
               </div>
 
-              <form className="navbar-form navbar-left" role="search">
-                <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Search" />
-                  <span className="input-group-btn">
-                    <button className="btn btn-default" type="button">Go</button>
-                  </span>
-                </div>
-              </form>
+              <div className="search-bar">
+                <form className="navbar-form navbar-right" role="search">
+                  <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Search" />
+                  </div>
+                  <button type="submit" className="btn btn-default">Submit</button>
+                </form>
+              </div>
             </div>
 
           </nav>
