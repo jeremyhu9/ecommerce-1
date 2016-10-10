@@ -3,7 +3,7 @@ const app = express ();
 const port = 8080;
 
 app.get('/', (req,res) => {
-  res.send('landing page');
+  res.status(200)
 });
 
 app.listen(port);
