@@ -3,17 +3,22 @@ const ReactDOM = require('react-dom');
 const Landing = require('./Landing');
 const Browse = require('./Browseall');
 const Featured = require('./Featured');
+const LandingComponents = require('./LandingComponents');
 const { Router, Route, hashHistory } = require('react-router');
+const { store } = require('./Store');
+const { Provider } = require('react-redux');
 
 const App = React.createClass({
   render() {
     return(
-      <Router history = {hashHistory}>
-        <Route component={Landing}>
-          <Route path='/' component={Featured} />
-          <Route path='browseall' component={Browse} />
-        </Route>
-      </Router>
+      <Provider store={store}>
+        <Router history = {hashHistory}>
+          <Route component={Landing}>
+            <Route path='/' component={LandingComponents} />
+            <Route path='browseall' component={Browse} />
+          </Route>
+        </Router>
+      </Provider>
     )
   }
 })

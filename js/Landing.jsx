@@ -1,6 +1,5 @@
 const React = require('react');
 const { Link } = require('react-router');
-const Featured = require('./Featured');
 
 const Landing = React.createClass({
   render() {
