@@ -1,6 +1,6 @@
 const React = require('react');
+const ReactRedux = require('react-redux');
 const { Link } = require('react-router');
-const data = require('../public/data');
 
 const Browse = React.createClass({
   render () {
@@ -8,7 +8,7 @@ const Browse = React.createClass({
        <div>
         <h3>All Items Here</h3>
         <div>
-          {data.all.map(function(item) {
+          {this.props.all.map(function(item) {
             return (
               <div className='items' key={item.id}>
                 <p>{item.productName}</p>
@@ -22,4 +22,16 @@ const Browse = React.createClass({
   }
 });
 
-module.exports = Browse;
+const mapStateToProps = (state) => {
+  return {
+    all: state.all
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+
+  }
+}
+
+module.exports = ReactRedux.connect(mapStateToProps, mapDispatchToProps)(Browse);
