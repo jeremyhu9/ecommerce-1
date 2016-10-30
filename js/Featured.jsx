@@ -1,5 +1,6 @@
 const React = require('react');
 const ReactRedux = require('react-redux');
+const Thumb = require('./Thumb')
 
 const Featured = React.createClass({
   componentDidMount: function(){
@@ -11,12 +12,7 @@ const Featured = React.createClass({
         <h3>Some featured items go here</h3>
         <div>
           {this.props.featured.map(function(item) {
-            return (
-              <div className="items" key={item.id}>
-                <p>{item.productName}</p>
-                <img src="http://placehold.it/140x100" />
-              </div>
-            )
+            return (<Thumb {...item} key={item.id}/>)
           })}
         </div>
       </div>
