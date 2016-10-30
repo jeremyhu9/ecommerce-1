@@ -4,7 +4,7 @@ const { Link } = require('react-router');
 const Landing = React.createClass({
   render() {
     return (
-      <div>
+      <div className="container-fluid">
         <div className='page-header'>
           <h1>Computers Emporium <small>Get Your Gear Here!</small></h1>
         </div>

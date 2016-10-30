@@ -7,6 +7,7 @@ const LandingComponents = require('./LandingComponents');
 const { Router, Route, hashHistory } = require('react-router');
 const { store } = require('./Store');
 const { Provider } = require('react-redux');
+const Details = require('./Details');
 
 const App = React.createClass({
   render() {
@@ -16,6 +17,7 @@ const App = React.createClass({
           <Route component={Landing}>
             <Route path='/' component={LandingComponents} />
             <Route path='browseall' component={Browse} />
+            <Route path='details' component={Details} />
           </Route>
         </Router>
       </Provider>
